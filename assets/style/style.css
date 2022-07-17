@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.icon {
+    height: 10vh;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding-bottom: 30px;
+    color: hsl(0, 0%, 95%);
+    height: 10vh;
+}
+
+p {
+    margin-bottom: 50px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    height: 50vh;
+    word-wrap: break-word;
+}
+
+.flex-container {
+    display: flex;
+    /* height: 100vh; */
+}
+
+.flex-item {
+    padding: 50px;
+    word-wrap: break-word;
+}
+
+.orange {
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.orange button {
+    color: hsl(31, 77%, 52%);
+}
+
+.cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.cyan button {
+    color: hsl(184, 100%, 22%);
+}
+
+.very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.very-dark-cyan button {
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+}
